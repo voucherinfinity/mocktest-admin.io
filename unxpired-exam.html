@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="/assets/font/fontawesome.css"> -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <!-- [ Sidebar Menu ] start -->
+        <nav class="pc-sidebar pc-trigger ">
+            <div class="navbar-wrapper">
+                <div class="m-header">
+                    <a href="../dashboard/index.html" class="b-brand text-primary">
+                        <img src="/assets/img/Logo.png" width="60" alt class="logo logo-lg" style="padding-top: 2rem; padding-left: -2px;" />
+                        <p class="p-0 m-0">Test
+                             Center</p>
+                    </a>
+                </div>
+                <div class="navbar-content" style="padding-top: 2rem;">
+                    <ul class="pc-navbar">
+                        <li class=" pc-item">
+                            <a href="./index.html" class="pc-caption ">
+                                <i class="bi bi-pc-display-horizontal"></i>
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="./candidate.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Candidate</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="assigned-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Assigned Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="expired-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Expired Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="unxpired-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Unxpired Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="question.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Questions</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="#submenu2" data-bs-toggle="collapse" class="pc-caption nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Master</span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="vendor.html" class="pc-caption nav-link px-0" style="color: #67758a;"> 
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Vendor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exam.html" class="pc-caption nav-link px-0" style="color: #67758a;">
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Exam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exam-set.html" class="pc-caption nav-link px-0" style="color: #67758a;">
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Exam Set
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>                    
+                    </ul>
+                    <div class="w-100 text-center">
+                        <div
+                            class="badge theme-version badge rounded-pill bg-light text-dark f-12"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--[ sidebar menu end ]-->
+
+        <!-- [ Header Topbar ] start -->
+        <header class="pc-header">
+            <div class="header-wrapper">
+                <!-- [Mobile Media Block] start -->
+                <div class="me-auto pc-mob-drp">
+                    <ul class="list-unstyled">
+                        <li class="pc-h-item header-mobile-collapse">
+                            <a href="#"
+                                class="pc-head-link head-link-secondary ms-0"
+                                id="menuToggle">
+                                <i   class="bi bi-list"></i>
+                            </a>
+                        </li>
+                        <li class="pc-h-item pc-sidebar-popup">
+                            <a href="#"
+                                class="pc-head-link head-link-secondary ms-0"
+                                id="mobile-collapse">
+                                <i class="bi bi-list"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown pc-h-item d-inline-flex d-md-none">
+                            <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none m-0"  data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <i class="bi bi-search"></i>
+                            </a>
+                            <div class="dropdown-menu pc-h-dropdown drp-search" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(24px, 49px, 0px);">
+                                <form class="px-3">
+                                    <div class="mb-0 d-flex align-items-center">
+                                        <i data-feather="search"></i>
+                                        <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . ." />
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="pc-h-item d-none d-md-inline-flex">
+                            <form class="header-search">
+                                <i data-feather="search"
+                                    class="bi bi-search icon-search"></i>
+                                <input type="search" class="form-control"
+                                    placeholder="Search here. . ." />
+                                <button
+                                    class="btn btn-light-secondary btn-search">
+                                    <i class="bi bi-funnel"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [Mobile Media Block end] -->
+                <div class="ms-auto">
+                    <ul class="list-unstyled">                        
+                        <li class="dropdown pc-h-item header-user-profile">
+                            <a
+                                class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0"
+                                data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <img src="/assets/img/avatar-2.png"
+                                    alt="user-image" class="user-avtar" />
+                                <span>
+                                    <i class="bi bi-gear"></i>
+                                </span>
+                            </a>
+                            <div
+                                class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                                <div class="dropdown-header">
+                                    <h4>
+                                        <span class="small text-muted">John
+                                            Doe</span>
+                                    </h4>
+                                    <p class="text-muted"> Admin</p>
+                                    
+                                    <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 280px)">
+                                        <hr />
+                                        <a
+                                            href="../application/account-profile-v1.html"
+                                            class="dropdown-item">
+                                            <i class="bi bi-gear"></i>
+                                            <span>Account Settings</span>
+                                        </a>                                        
+                                        <a href="../pages/login-v1.html"
+                                            class="dropdown-item">
+                                            <i class="bi bi-box-arrow-right"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- [ Header ] end -->
+        
+        <!----Main content start------>
+        <div class="pc-container">
+            <div class="pc-content">
+
+                <!------breadcump------>
+                <div class="page-header" style="background-color: #6610f2;">
+                    <div class="page-block">
+                      <div class="row align-items-center" >
+                        <div class="col">
+                          <div class="page-header-title">
+                            <h5 class="m-b-10" style="color: white;">Unxpired Exam Data</h5>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <ul class="breadcrumb">
+                            <li class="breadcrumb-item" style="color: white;"><a href="../dashboard/index.html" style="color: white;">Dashboard</a></li>
+                            <li class="breadcrumb-item" style="color: white;"><a href="javascript: void(0)" style="color: white;">Assigned Exam Data</a></li>
+                          
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--------breadcimp --------->
+                
+
+                <div class="row"> 
+                    <div class="row" style="justify-content: space-between;">
+                        <div class="col-xl-2 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0">
+                            <div class="row">
+                                <div class="col-12 d-flex align-items-center filter">
+                                    <p class="mb-0 me-2">Show</p>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>10</option>
+                                        <option value="1">20</option>
+                                        <option value="2">30</option>
+                                        <option value="3">50</option>
+                                        <option value="4">100</option>
+                                    </select>
+                                    <button class="bg-secondary-dark" style="border-radius: 2rem; color: white !important;">Enteries</button> 
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="col-xl-4 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search here..." aria-label="Search"  style="border-top-right-radius: 0rem !important; border-bottom-right-radius: 0rem !important; border-bottom-left-radius: 1rem; border-top-left-radius: 1rem;">
+                                <div class="input-group-append">
+                                    <button class="btn pb-2" style="background-color: #6610f2; color: white; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 0rem; border-bottom-left-radius: 0rem;" type="button">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                    <div class="col-xl-12 col-md-12 py-2">
+                        <div class="table table-bordered table-responsive-xl" style="border-radius: 20px; overflow: auto;">
+                            <table class="table">
+                                <thead class="table-dark" >
+                                    <tr>
+                                        <th scope="col" style="width: 100%; background-color: #71aceb !important; border: none;">Sr. No.</th>
+                                        <th scope="col" style="width: 100%; background-color: #71aceb !important; border: none;">Candidate Name</th>
+                                        <th scope="col" style="width: 100%; background-color: #71aceb !important; border: none;">Email Id</th>
+                                        <th scope="col" style="width: 20%; background-color: #71aceb !important; border: none;">Phone no</th>
+                                        <th scope="col" style="width: 20%; background-color: #71aceb !important; border: none;">Mail Status</th>
+                                        <th scope="col" style="width: 20%; background-color: #71aceb !important; border: none;">Launch Key</th>
+                                        <th scope="col" style="width: 20%; background-color: #71aceb !important; border: none;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>Mail Sent</td>
+                                        <td>ACGT75</td>
+                                        <td>
+                                            <i class="bi bi-eye-fill"></i>
+                                            <i class="bi bi-pencil-square"></i>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>Mail Sent</td>
+                                        <td>DFGS62</td>
+                                        <td>
+                                            <i class="bi bi-eye-fill"></i>
+                                            <i class="bi bi-pencil-square"></i>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird Jeetender</td>
+                                        <td>@twitter</td>
+                                        <td>Mail Sent</td>
+                                        <td>SEDF26</td>
+                                        <td>
+                                            <i class="bi bi-eye-fill" data-bs-toggle="modal" data-bs-target="#exampleModal1"></i>
+                                            <i class="bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>     
+                    </div>
+                    
+                                                    
+                </div>                
+            </div>
+        </div>
+        <!----Add new candidate  modal start----->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center" style="background-color: #6610f2; color: white;" >
+                        <div class="row">                        
+                            <div class="col-12" style="justify-content: center;">
+                                <h5 class="modal-title " id="exampleModalLabel" >Add New Candidate</h5>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12" style="justify-content: center;">
+                        <input type="text" class="form-control" id="candidateName" placeholder="Candidate Name">      
+                        </div>
+                        <div class="col-12 mt-2" style="justify-content: center;">
+                            <input type="email" class="form-control" id="candidateName" placeholder="Email ID">      
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="input-group">
+                                <div class="col-3 ">
+                                    <select class="form-select" id="countryCode" aria-label="Country Code">
+                                        <option value="+1">+1</option>
+                                        <option value="+44">+44</option>
+                                        <option value="+91">+91</option>
+                                        <option value="+61">+61</option>
+                                    </select>
+                                </div>
+                                <div class="col-9 pe-1" style="justify-content: end;">
+                                    <input type="tel" class="form-control" id="candidatePhone" placeholder="Enter phone number" pattern="[0-9]{10}" required>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-12 mt-2">
+                            <select class="form-select" id="candidateStatus" aria-label="Candidate Status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #71aceb;">Close</button>
+                    <button type="button" class="btn" style="background-color: #6610f2; color: white;">Save Candidate</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!----Add new candidate modal end----->
+        <!------view candidate modal-------->
+        <div class="modal  fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center" style="background-color: #6610f2; color: white;" >
+                    <div class="row">                        
+                        <div class="col-12" style="justify-content: center;">
+                            <h5 class="modal-title " id="exampleModalLabel" >View Candidate</h5>
+                        </div>
+                    </div>         
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                    <div class="col-12" style="justify-content: center;">
+                    <input type="text" class="form-control" disabled id="candidateName" placeholder="Larry the Bird Jeetender">      
+                    </div>
+                    <div class="col-12 mt-2" style="justify-content: center;">
+                        <input type="email" class="form-control" disabled id="candidateName" placeholder="jitenderdesinger@gmail.com">      
+                    </div>
+                    <div class="col-12 mt-2">
+                        <div class="input-group">
+                            <div class="col-3 ">
+                                <select class="form-select" id="countryCode" disabled aria-label="Country Code">
+                                    <option value="+91">+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+44">+44</option>                                    
+                                    <option value="+61">+61</option>
+                                </select>
+                            </div>
+                            <div class="col-9 pe-1" style="justify-content: end;">
+                                <input type="tel" class="form-control" disabled id="candidatePhone" placeholder="9911493479" pattern="[0-9]{10}" required>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="col-12 mt-2">
+                        <select class="form-select" id="candidateStatus" disabled aria-label="Candidate Status">
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #71aceb;">Close</button>
+                <button type="button" disabled class="btn" style="background-color: #6610f2; color: white;">Save Candidate</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-----View End Candidate------------>
+
+        <footer class="pc-footer">
+            <div class="footer-wrapper container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="text-center">
+                            <a href="#">
+                                Designed by Jeetender
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>-->
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

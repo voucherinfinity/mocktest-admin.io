@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="/assets/font/fontawesome.css"> -->
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <!-- [ Sidebar Menu ] start -->
+        <nav class="pc-sidebar pc-trigger ">
+            <div class="navbar-wrapper">
+                <div class="m-header">
+                    <a href="../dashboard/index.html" class="b-brand text-primary">
+                        <img src="/assets/img/Logo.png" width="60" alt class="logo logo-lg" style="padding-top: 2rem; padding-left: -2px;" />
+                        <p class="p-0 m-0">Test
+                             Center</p>
+                    </a>
+                </div>
+                <div class="navbar-content" style="padding-top: 2rem;">
+                    <ul class="pc-navbar">
+                        <li class=" pc-item">
+                            <a href="./index.html" class="pc-caption ">
+                                <i class="bi bi-pc-display-horizontal"></i>
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="./candidate.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Candidate</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="/assigned-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Assigned Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="expired-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Expired Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="unxpired-exam.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Unxpired Exam</span>
+                            </a>
+                        </li>
+                        <li class=" pc-item">
+                            <a href="question.html" class="pc-caption ">
+                                <i class="fs-4 bi-house"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Questions</span>
+                            </a>
+                        </li>
+                        <li class="pc-item">
+                            <a href="#submenu2" data-bs-toggle="collapse" class="pc-caption nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> 
+                                <span class="pc-micon"></span>
+                                <span class="pc-mtext">Master</span>
+                            </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="vendor.html" class="pc-caption nav-link px-0" style="color: #67758a;"> 
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Vendor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exam.html" class="pc-caption nav-link px-0" style="color: #67758a;">
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Exam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exam-set.html" class="pc-caption nav-link px-0" style="color: #67758a;">
+                                        <i class="fs-4 bi-speedometer2"></i> 
+                                        <span class="pc-micon"></span>
+                                        <span class="pc-mtext "></span> Exam Set
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>                    
+                    </ul>
+                    <div class="w-100 text-center">
+                        <div
+                            class="badge theme-version badge rounded-pill bg-light text-dark f-12"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--[ sidebar menu end ]-->
+
+        <!-- [ Header Topbar ] start -->
+        <header class="pc-header">
+            <div class="header-wrapper">
+                <!-- [Mobile Media Block] start -->
+                <div class="me-auto pc-mob-drp">
+                    <ul class="list-unstyled">
+                        <li class="pc-h-item header-mobile-collapse">
+                            <a href="#"
+                                class="pc-head-link head-link-secondary ms-0"
+                                id="menuToggle">
+                                <i   class="bi bi-list"></i>
+                            </a>
+                        </li>
+                        <li class="pc-h-item pc-sidebar-popup">
+                            <a href="#"
+                                class="pc-head-link head-link-secondary ms-0"
+                                id="mobile-collapse">
+                                <i class="bi bi-list"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown pc-h-item d-inline-flex d-md-none">
+                            <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none m-0"  data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                                aria-expanded="false">
+                                <i class="bi bi-search"></i>
+                            </a>
+                            <div class="dropdown-menu pc-h-dropdown drp-search" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(24px, 49px, 0px);">
+                                <form class="px-3">
+                                    <div class="mb-0 d-flex align-items-center">
+                                        <i data-feather="search"></i>
+                                        <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . ." />
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="pc-h-item d-none d-md-inline-flex">
+                            <form class="header-search">
+                                <i data-feather="search"
+                                    class="bi bi-search icon-search"></i>
+                                <input type="search" class="form-control"
+                                    placeholder="Search here. . ." />
+                                <button
+                                    class="btn btn-light-secondary btn-search">
+                                    <i class="bi bi-funnel"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [Mobile Media Block end] -->
+                <div class="ms-auto">
+                    <ul class="list-unstyled">                        
+                        <li class="dropdown pc-h-item header-user-profile">
+                            <a
+                                class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0"
+                                data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <img src="/assets/img/avatar-2.png"
+                                    alt="user-image" class="user-avtar" />
+                                <span>
+                                    <i class="bi bi-gear"></i>
+                                </span>
+                            </a>
+                            <div
+                                class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+                                <div class="dropdown-header">
+                                    <h4>
+                                        <span class="small text-muted">John
+                                            Doe</span>
+                                    </h4>
+                                    <p class="text-muted"> Admin</p>
+                                    
+                                    <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 280px)">
+                                        <hr />
+                                        <a
+                                            href="../application/account-profile-v1.html"
+                                            class="dropdown-item">
+                                            <i class="bi bi-gear"></i>
+                                            <span>Account Settings</span>
+                                        </a>                                        
+                                        <a href="../pages/login-v1.html"
+                                            class="dropdown-item">
+                                            <i class="bi bi-box-arrow-right"></i>
+                                            <span>Logout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- [ Header ] end -->
+        
+        <!----Main content start------>
+        <div class="pc-container">
+            <div class="pc-content">
+
+                <!------breadcump------>
+                <div class="page-header" style="background-color: #6610f2;">
+                    <div class="page-block">
+                      <div class="row align-items-center" >
+                        <div class="col">
+                          <div class="page-header-title">
+                            <h5 class="m-b-10" style="color: white;">Question</h5>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <ul class="breadcrumb">
+                            <li class="breadcrumb-item" style="color: white;"><a href="../dashboard/index.html" style="color: white;">Dashboard</a></li>
+                            <li class="breadcrumb-item" style="color: white;"><a href="javascript: void(0)" style="color: white;">Question</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--------breadcimp --------->
+                
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0">
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="0" selected disabled>Select Vendor</option>
+                            <option >AWS</option>
+                            <option >CISCO</option>
+                        </select>                         
+                    </div>
+                    <div class="col-xl-3 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Select Exam Type</option>
+                            <option value="1">Assigned</option>
+                            <option value="2">Unassigned</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-4 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled>Select Exam</option>
+                            <option value="1">Assigned</option>
+                            <option value="2">Unassigned</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-2 col-md-3 pb-2 pb-md-0 pt-2 pt-md-0 d-flex justify-content-center justify-content-md-start">
+                        <div class="input-group-append">
+                            <button class="btn" style="background-color: #6610f2; color: white;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="bi bi-plus-lg p-0 m-0"></i> Add Questions
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!--main table---->
+                    <div class="col-xl-12 col-md-12 py-2">
+                        <div class="table-responsive" style="border-radius: 20px; overflow-x: auto; white-space: nowrap;">
+                            <table class="table table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Sr. No.</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Vendor Name</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Paper Type</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Paper Name</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Question</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 1</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 2</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 3</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 4</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 5</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Option 6</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Answer 1</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Answer 2</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none;">Answer 3</th>
+                                        <th scope="col" style="background-color: #71aceb !important; border: none; ">Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>ABC</td>
+                                        <td>ABC Tester Foundation Level</td>
+                                        <td>Exam Set-1</td>
+                                        <td>Which of the following factors are considered ranking signals by Google for SEO?</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Meta Keywords Tag</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Domain Age</td>
+                                        <td>Backlinks</td>
+                                        <td>Keyword Stuffing</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Backlinks</td>
+                                        <td>
+                                            <i class="bi bi-eye-fill" data-bs-toggle="modal" data-bs-target="#exampleModal1"></i>
+                                            <i class="bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>ABC</td>
+                                        <td>ABC Tester Foundation Level</td>
+                                        <td>Exam Set-1</td>
+                                        <td>Which of the following factors are considered ranking signals by Google for SEO?</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Meta Keywords Tag</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Domain Age</td>
+                                        <td>Backlinks</td>
+                                        <td>Keyword Stuffing</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Backlinks</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>ABC</td>
+                                        <td>ABC Tester Foundation Level</td>
+                                        <td>Exam Set-1</td>
+                                        <td>Which of the following factors are considered ranking signals by Google for SEO?</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Meta Keywords Tag</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Domain Age</td>
+                                        <td>Backlinks</td>
+                                        <td>Keyword Stuffing</td>
+                                        <td>Page Load Speed</td>
+                                        <td>Mobile-Friendliness</td>
+                                        <td>Backlinks</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+                                                    
+                </div>                
+            </div>
+        </div>
+        <!----Add new candidate  modal start----->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center" style="background-color: #6610f2; color: white;" >
+                            <div class="row">                        
+                                <div class="col-12" style="justify-content: center;">
+                                    <h5 class="modal-title " id="exampleModalLabel" >Add Question</h5>
+                                </div>
+                            </div>         
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12" style="justify-content: center;">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="recipient-name" class="col-form-label">Vendor:</label>
+                                            <select class="form-select" id="candidateStatus" aria-label="Select Vendor">
+                                                <option value="" disabled selected>Select Vendor </option>
+                                                <option value="1">Active</option>
+                                                <option value="2">Inactive</option>
+                                            </select>  
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="recipient-name" class="col-form-label">Exam Type:</label>
+                                            <select class="form-select" id="candidateStatus" aria-label="Select Vendor">
+                                                <option value="" disabled selected>Select Exam Type </option>
+                                                <option value="1">Active</option>
+                                                <option value="2">Inactive</option>
+                                            </select>  
+                                        </div>
+                                        
+                                    </div>                                       
+                                </div>
+                                <div class="col-12 mt-2" style="justify-content: center;">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="recipient-name" class="col-form-label">Exam:</label>
+                                            <select class="form-select" id="candidateStatus" aria-label="Select Exam ">
+                                                <option value=""disabled selected>Select Exam </option>
+                                                <option value="1">Inactive</option>
+                                                <option value="2"></option>
+                                            </select>  
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="recipient-name" class="col-form-label">Status:</label>
+                                            <select class="form-select" id="candidateStatus" aria-label="Select Exam ">
+                                                <option value=""disabled selected>Select Status </option>
+                                                <option value="1">Inactive</option>
+                                                <option value="2">Active</option>
+                                            </select>  
+                                        </div>
+                                    </div>
+                                      
+                                </div>
+                                                      
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Question:</label>
+                                    <input type="text" class="form-control"  placeholder="Question">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 1:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 1">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 2:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 2">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 3:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 3">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 4:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 4">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 5:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 5">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Option 6:</label>
+                                    <input type="text" class="form-control"  placeholder="Option 6">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Answer 1:</label>
+                                    <input type="text" class="form-control"  placeholder="Answer 1">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Answer 2:</label>
+                                    <input type="text" class="form-control"  placeholder="Answer 2">
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="recipient-name" class="col-form-label">Answer 3:</label>
+                                    <input type="text" class="form-control"  placeholder="Answer 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #71aceb;">Close</button>
+                            <button type="button" class="btn" style="background-color: #6610f2; color: white;">Save Candidate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!----Add new candidate modal end----->
+        <!------view candidate modal-------->
+        <div class="modal  fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center" style="background-color: #6610f2; color: white;" >
+                    <div class="row">                        
+                        <div class="col-12" style="justify-content: center;">
+                            <h5 class="modal-title " id="exampleModalLabel" >View Questions</h5>
+                        </div>
+                    </div>         
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12" style="justify-content: center;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Vendor:</label>
+                                    <input type="text" class="form-control"  placeholder="ABC" disabled>
+                                </div>
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Exam Type:</label>
+                                    <input type="text" class="form-control"  placeholder="ABC Tester Foundation Level" disabled>
+                                </div>
+                                
+                            </div>                                       
+                        </div>
+                        <div class="col-12 mt-2" style="justify-content: center;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Exam:</label>
+                                    <input type="text" class="form-control"  placeholder="Exam Set-1" disabled>
+                                </div>
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Status:</label>
+                                    <select class="form-select" id="candidateStatus" aria-label="Select Exam ">
+                                        <option value=""disabled selected>Active</option>
+                                        
+                                    </select>  
+                                </div>
+                            </div>
+                              
+                        </div>
+                                              
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Question:</label>
+                            <input type="text" class="form-control" disabled  placeholder="Which of the following factors are considered ranking signals by Google for SEO?">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 1:</label>
+                            <input type="text" class="form-control"  placeholder="Page Load Speed" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 2:</label>
+                            <input type="text" class="form-control"  placeholder="Meta Keywords Tag" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 3:</label>
+                            <input type="text" class="form-control"  placeholder="Mobile-Friendliness" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 4:</label>
+                            <input type="text" class="form-control"  placeholder="Domain Age" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 5:</label>
+                            <input type="text" class="form-control"  placeholder="Backlinks" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 6:</label>
+                            <input type="text" class="form-control"  placeholder="Keyword Stuffing" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 1:</label>
+                            <input type="text" class="form-control"  placeholder="Page Load Speed" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 2:</label>
+                            <input type="text" class="form-control"  placeholder="Mobile-Friendliness" disabled>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 3:</label>
+                            <input type="text" class="form-control"  placeholder="Backlinks" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #71aceb;">Close</button>
+                <button type="button" disabled class="btn" style="background-color: #6610f2; color: white;">Save Candidate</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-----View End Candidate------------>
+
+         <!------Edit candidate modal-------->
+         <div class="modal  fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center" style="background-color: #6610f2; color: white;" >
+                    <div class="row">                        
+                        <div class="col-12" style="justify-content: center;">
+                            <h5 class="modal-title " id="exampleModalLabel" >Edit Question</h5>
+                        </div>
+                    </div>         
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12" style="justify-content: center;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Vendor:</label>
+                                    <select class="form-select" id="candidateStatus" aria-label="Select Vendor">
+                                        <option value="" disabled selected>	ABC  </option>
+                                        <option value="1">DEF </option>
+                                        <option value="2">GHI </option>
+                                    </select>  
+                                </div>
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Exam Type:</label>
+                                    <select class="form-select" id="candidateStatus" aria-label="Select Vendor">
+                                        <option value="" disabled selected>	ABC Tester Foundation Level </option>
+                                        <option value="1">ABC Tester Expert Level</option>
+                                        <option value="2">ABC Tester Advanced Level</option>
+                                    </select>  
+                                </div>
+                                
+                            </div>                                       
+                        </div>
+                        <div class="col-12 mt-2" style="justify-content: center;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Exam:</label>
+                                    <select class="form-select" id="candidateStatus" aria-label="Select Exam ">
+                                        <option value="" selected>Exam Set-1 </option>
+                                        <option value="1">Exam Set-2</option>
+                                        <option value="2">Exam Set-3</option>
+                                    </select>  
+                                </div>
+                                <div class="col-6">
+                                    <label for="recipient-name" class="col-form-label">Status:</label>
+                                    <select class="form-select" id="candidateStatus" aria-label="Select Exam ">
+                                        <option value="" selected>Active </option>
+                                        <option value="1">Inactive</option>
+                                        
+                                    </select>  
+                                </div>
+                            </div>
+                              
+                        </div>
+                                              
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Question:</label>
+                            <input type="text" class="form-control"   placeholder="Which of the following factors are considered ranking signals by Google for SEO?">
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 1:</label>
+                            <input type="text" class="form-control"  placeholder="Page Load Speed" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 2:</label>
+                            <input type="text" class="form-control"  placeholder="Meta Keywords Tag" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 3:</label>
+                            <input type="text" class="form-control"  placeholder="Mobile-Friendliness" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 4:</label>
+                            <input type="text" class="form-control"  placeholder="Domain Age" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 5:</label>
+                            <input type="text" class="form-control"  placeholder="Backlinks" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Option 6:</label>
+                            <input type="text" class="form-control"  placeholder="Keyword Stuffing" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 1:</label>
+                            <input type="text" class="form-control"  placeholder="Page Load Speed" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 2:</label>
+                            <input type="text" class="form-control"  placeholder="Mobile-Friendliness" >
+                        </div>
+                        <div class="col-12 mt-2">
+                            <label for="recipient-name" class="col-form-label">Answer 3:</label>
+                            <input type="text" class="form-control"  placeholder="Backlinks" >
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #71aceb;">Close</button>
+                <button type="button"  class="btn" style="background-color: #6610f2; color: white;">Save Candidate</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-----View End Candidate------------>
+
+
+        <footer class="pc-footer">
+            <div class="footer-wrapper container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="text-center">
+                            <a href="#">
+                                Designed by Jeetender
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <style>
+
+        </style>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>-->
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>
