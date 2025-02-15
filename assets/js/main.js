@@ -81,3 +81,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+// account setting //
+document.addEventListener("DOMContentLoaded", function () {
+    const profileInfo = document.getElementById("profile-section");
+    const changePassword = document.getElementById("change-password");
+    const profileTab = document.getElementById("profile-tab");
+    const passwordTab = document.getElementById("password-tab");
+
+    // Show profile section by default and hide change password section
+    profileInfo.style.display = "block";
+    changePassword.style.display = "none";
+
+    profileTab.addEventListener("click", function () {
+        profileInfo.style.display = "block";
+        changePassword.style.display = "none";
+    });
+
+    passwordTab.addEventListener("click", function () {
+        profileInfo.style.display = "none";
+        changePassword.style.display = "block";
+    });
+});
